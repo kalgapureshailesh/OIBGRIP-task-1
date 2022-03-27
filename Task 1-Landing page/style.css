@@ -1,0 +1,134 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--text: 1.5rem;
+	--head: calc(1rem + 5vw);
+	--bg-color: #e67e22;
+}
+
+body{
+	background: linear-gradient(black,transparent),
+	 url("https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80") no-repeat;
+    background-size: cover;
+
+    
+	
+}
+
+.hero-section{
+	min-height: 50vh;
+
+}
+
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 10vh;
+	padding: 0rem 1.5rem;
+	color: white;
+}
+
+.navbar ul{
+	list-style: none;
+}
+
+.navbar ul li{
+	display: inline-block;
+	margin-left: 3rem;
+	font-size: var(--text);
+}
+
+.navbar ul li a{
+	text-decoration: transparent;
+	color: white;
+	border: 2px solid transparent;
+}
+
+.navbar ul li a:hover{
+	border-bottom: 2px solid white;
+	
+
+}
+
+
+.hero-text{
+	color: white;
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	animation: slide 1s ease-in-out;
+}
+
+@keyframes slide{
+	from{
+		transform: translateX(-100%);
+	}to{
+		transform: translatex(-0%);
+	}
+}
+
+.hero-text::before{
+	content: '';
+	position: absoulate;
+}	
+
+.hero-text a{
+	color: white;
+	background: var(--bg-color);
+	font-weight: 900;
+	padding: 0.8rem 1rem;
+
+}
+
+.hero-text a:hover{
+	opacity: 0.8;
+	transition: opacity 250ms linear;
+}
+
+.hero-text h2{
+	font-size: var(--head);
+}
+
+.hero-text p{
+	font-size: 3rem;
+}
+
+.content {
+    min-height: 600px;
+  }
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    text-align:center;
+}
+
+.items {
+    width: 30%;
+    display: block;
+    padding: 1px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    float: left;
+    margin-left: 1%;
+    height: 65vh;
+}
+.thumbnails{
+	height: 400px;
+	width: 300px;
+}
+
+.burger-sec{
+	width: 100vw;
+}
